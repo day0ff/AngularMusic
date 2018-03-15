@@ -1,0 +1,8 @@
+<h2>Passports</h2>
+<ul class="passports">
+  <li *ngFor="let passport of passports">
+    <a routerLink="/passports/detail/{{passport.passportId}}">
+      <span class="badge">{{passport.passportId}}</span> {{passport.passportNumber}}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,30 @@
+<hr/>
+<div *ngIf="song; else notFound">
+  <h3 *ngIf="song.id==null">Create new Song</h3>
+  <h2>
+    {{song.name}}
+    <span>details</span>
+    <app-delete-modal *ngIf="song.id!=null" [kind]="'song'" [name]="song.name" (eventEmitter)="deleteSong()" class="delete">
+    </app-delete-modal>
+  </h2>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text celLength">id :</span>
+    </div>
+    <input type="text" class="form-control" id="id" [(ngModel)]="song.id" placeholder="id" disabled>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text celLength">name :</span>
+    </div>
+    <input type="text" class="form-control" id="name" [(ngModel)]="song.name" placeholder="name">
+    <div class="input-group-append">
+      <app-update-modal *ngIf="song.id!=null" [kind]="'song'" [name]="song.name" (eventEmitter)="updateSong()"></app-update-modal>
+      <app-save-modal *ngIf="song.id==null" [kind]="'song'" [name]="song.name" (eventEmitter)="saveSong()"></app-save-modal>
+    </div>
+  </div>
+</div>
+<ng-template #notFound>
+  <h2>Song not found.</h2>
+</ng-template>
+<button class="btn btn-outline-secondary celLength" type="button" (click)="goBack()">go back</button>

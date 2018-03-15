@@ -1,0 +1,10 @@
+<div *ngIf="passport">
+  <h2>{{ passport.passportNumber | uppercase }} Details</h2>
+  <div><span>id: </span>{{passport.passportId}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="passport.passportNumber" placeholder="name">
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

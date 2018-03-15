@@ -1,0 +1,25 @@
+a{
+  color: #607D8B;
+}
+a:hover{
+  color: #444444;
+}
+.col{
+  text-align: center;
+}
+.col a{
+  text-decoration: none;
+  color: white;
+}
+.col a:hover{
+  color: #BBD8DC;
+
+}
+.col h4{
+  height: 18vh;
+  line-height: 18vh;
+  vertical-align: center;
+  border-radius: 5px;
+  background-color: #607D8B;
+  overflow: hidden;
+}
