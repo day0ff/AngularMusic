@@ -1,10 +1,8 @@
 import {Injectable} from '@angular/core';
 
 import {Observable} from 'rxjs/Observable';
-import {of} from 'rxjs/observable/of';
 
 import {Passport} from '../passports/passport';
-import {PASSPORTS} from './PASSPORTS';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 const httpOptions = {
@@ -13,17 +11,32 @@ const httpOptions = {
 
 @Injectable()
 export class PassportService {
-  private passportUrl = 'http://localhost:8090/passport/get';
+  public passportUrl = 'http://localhost:8090/passport';
 
   public getPassport(id: number): Observable<Passport> {
-    return of(PASSPORTS.find(passport => passport.passportId === id));
+    return this.http.get<Passport>(this.passportUrl + '/get/' + id);
   }
 
-  /*  public getPassports(): Observable<Passport[]> {
-      return of(PASSPORTS);
-    } */
   public getPassports(): Observable<Passport[]> {
-    return this.http.get<Passport[]>(this.passportUrl);
+    return this.http.get<Passport[]>(this.passportUrl + '/get');
+  }
+
+  savePassport(passport: Passport): Observable<Passport> {
+    return this.http.post<Passport>(this.passportUrl + '/save',
+      JSON.stringify(passport),
+      httpOptions);
+  }
+
+  deletePassport(passport: Passport): Observable<any> {
+    return this.http.post<Passport>(this.passportUrl + '/delete',
+      JSON.stringify(passport),
+      httpOptions);
+    // .map((response: Response) => {console.log(response.status);});
+  }
+
+  updatePassport(passport: Passport): Observable<Passport> {
+    return this.http.get<string>(this.passportUrl + '/update/'
+      + passport.passportNumber + '/' + passport.passportId);
   }
 
   constructor(private http: HttpClient) {

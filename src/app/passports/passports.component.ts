@@ -10,12 +10,10 @@ import {PassportService} from '../service/passport.service';
 export class PassportsComponent implements OnInit {
   passports: Passport[];
 
-
   getPassports(): void {
     this.passportService.getPassports()
       .subscribe(passports => {
-        this.passports = passports;
-        console.log(passports[0].passportNumber);
+        this.passports = passports.sort((p1, p2) => p2.passportId - p1.passportId);
       });
   }
 

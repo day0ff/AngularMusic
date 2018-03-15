@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   getPassports(): void {
-    this.passportService.getPassports().subscribe(passports => this.passports = passports.slice(1, 4));
+    this.passportService.getPassports().subscribe(passports => this.passports = passports.slice(5, 9));
   }
 
   constructor(private songService: SongService, private passportService: PassportService) {
