@@ -9,7 +9,7 @@
   <h1 class="navbar-brand">
     <a class="nav-link" routerLink="/home">
       <img src="../assets/imges/favicon.png" width="32" height="32" alt="logo">
-      {{title}}
+      {{title}}&nbsp;&nbsp;&nbsp;{{'App.Title' | translate}}
     </a>
   </h1>
 </div>
@@ -22,19 +22,29 @@
     <div class="collapse navbar-collapse" id="navbarSupport">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/home">Home</a>
+          <a class="nav-link" routerLink="/home">{{'Nav.Home' | translate}}</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/passports">Passports</a>
+          <a class="nav-link" routerLink="/passports">{{'Nav.Passports' | translate}}</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/songs">Songs</a>
+          <a class="nav-link" routerLink="/songs">{{'Nav.Songs' | translate}}</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <!--form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary my-2 my-sm-0">Search</button>
-      </form>
+      </form-->
+      <div class="dropdown">
+        <button class="btn  btn-outline-secondary dropdown-toggle" type="button" id="localeMenu" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          {{locale}}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="localeMenu">
+          <button class="dropdown-item celLength" (click)="switchLanguage('en')">en</button>
+          <button class="dropdown-item celLength" (click)="switchLanguage('ru')">ru</button>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

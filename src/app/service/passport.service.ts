@@ -34,7 +34,7 @@ export class PassportService {
     // .map((response: Response) => {console.log(response.status);});
   }
 
-  updatePassport(passport: Passport): Observable<Passport> {
+  updatePassport(passport: Passport): Observable<string> {
     return this.http.get<string>(this.passportUrl + '/update/'
       + passport.passportNumber + '/' + passport.passportId);
   }

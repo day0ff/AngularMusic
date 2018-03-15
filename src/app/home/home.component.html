@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="container">
-    <h3><a class="nav-link" routerLink="/songs">Favorite Songs:</a></h3>
+    <h3><a class="nav-link" routerLink="/songs">{{'Home.Songs' | translate}}</a></h3>
     <div class="row">
       <div *ngFor="let song of songs" class="col">
         <a routerLink="/songs/detail/{{song.id}}">
@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="container">
-    <h3><a class="nav-link" routerLink="/passports">Favorite Passports:</a></h3>
+    <h3><a class="nav-link" routerLink="/passports">{{'Home.Passports' | translate}}</a></h3>
     <div class="row">
       <div *ngFor="let passport of passports" class="col">
         <a routerLink="/passports/detail/{{passport.passportId}}">

@@ -1,0 +1,51 @@
+{
+  "App":{
+    "Title": "Music for everyone."
+  },
+  "Nav":{
+    "Home": "Home",
+    "Passports": "Passports",
+    "Songs" : "Songs"
+  },
+  "Modal":{
+    "Close":"Close",
+    "Delete":{
+      "Btn": "Delete",
+      "Title": "confirm action"
+    },
+    "Save":{
+      "Btn": "Save",
+      "Title": "confirm action"
+    },
+    "Update":{
+      "Btn": "Update",
+      "Title": "confirm action"
+    }
+  },
+  "Home":{
+    "Songs": "Favorite Songs:",
+    "Passports": "Favorite Passports:"
+  },
+  "Songs":{
+    "Title": "Songs",
+    "NewSong": "New Song",
+    "NotFound":"Song not found.",
+    "Details":{
+      "Song": "Song",
+      "Details": "details",
+      "CreateNewSong": "Create new Song",
+      "BtnBack": "go back"
+    }
+  },
+  "Passports":{
+    "Title": "Passports",
+    "NewPassport": "New Passport",
+    "NotFound":"Passport not found.",
+    "Details":{
+      "Passport": "Passport",
+      "Details": "details",
+      "CreateNewPassport": "Create new Passport",
+      "BtnBack": "go back"
+    }
+  }
+}

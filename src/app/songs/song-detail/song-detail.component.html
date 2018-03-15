@@ -1,10 +1,11 @@
 <hr/>
 <div *ngIf="song; else notFound">
-  <h3 *ngIf="song.id==null">Create new Song</h3>
+  <h3 *ngIf="song.id==null">{{'Songs.Details.CreateNewSong' | translate}}</h3>
   <h2>
     {{song.name}}
-    <span>details</span>
-    <app-delete-modal *ngIf="song.id!=null" [kind]="'song'" [name]="song.name" (eventEmitter)="deleteSong()" class="delete">
+    <span>{{'Songs.Details.Details' | translate}}</span>
+    <app-delete-modal *ngIf="song.id!=null" [kind]="'song'" [name]="song.name" (eventEmitter)="deleteSong()"
+                      class="delete">
     </app-delete-modal>
   </h2>
   <div class="input-group mb-3">
@@ -19,12 +20,16 @@
     </div>
     <input type="text" class="form-control" id="name" [(ngModel)]="song.name" placeholder="name">
     <div class="input-group-append">
-      <app-update-modal *ngIf="song.id!=null" [kind]="'song'" [name]="song.name" (eventEmitter)="updateSong()"></app-update-modal>
-      <app-save-modal *ngIf="song.id==null" [kind]="'song'" [name]="song.name" (eventEmitter)="saveSong()"></app-save-modal>
+      <app-update-modal *ngIf="song.id!=null" [kind]="'song'" [name]="song.name"
+                        (eventEmitter)="updateSong()"></app-update-modal>
+      <app-save-modal *ngIf="song.id==null" [kind]="'song'" [name]="song.name"
+                      (eventEmitter)="saveSong()"></app-save-modal>
     </div>
   </div>
 </div>
 <ng-template #notFound>
-  <h2>Song not found.</h2>
+  <h2>{{'Songs.NotFound' | translate}}</h2>
 </ng-template>
-<button class="btn btn-outline-secondary celLength" type="button" (click)="goBack()">go back</button>
+<button class="btn btn-outline-secondary celLength" type="button" (click)="goBack()">
+  {{'Songs.Details.BtnBack' | translate}}
+</button>
