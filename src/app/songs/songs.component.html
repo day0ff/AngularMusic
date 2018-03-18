@@ -7,9 +7,9 @@
 </h2>
 <ul class="list-group">
   <li class="list-group-item list-group-item-light" *ngFor="let song of songs">
-    <span class="badge">{{song.id}}&nbsp;:</span>&nbsp;&nbsp;
-    <a routerLink="/songs/detail/{{song.id}}">
-      {{song.name}}
+    <span class="badge">{{song.songId}}&nbsp;:</span>&nbsp;&nbsp;
+    <a routerLink="/songs/detail/{{song.songId}}">
+      {{song.songName}}
     </a>
   </li>
 </ul>

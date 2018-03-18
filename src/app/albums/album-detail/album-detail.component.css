@@ -10,10 +10,16 @@ h2 span, h3 span{
   width: 10vw;
   overflow: hidden;
 }
-h3 a{
+.mb-0, .mb-0 button{
+  color:#888888;
+}
+.mb-0 button{
+  padding-left:0;
+}
+.mb-0 a, h3 a{
   color: #607D8B;
 }
-h3 a:hover{
+.mb-0 a:hover, h3 a:hover{
   color: #444444;
   text-decoration: none;
 }

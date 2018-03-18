@@ -2,7 +2,8 @@
 <div *ngIf="passport; else notFound">
   <h3 *ngIf="passport.passportId==null">{{'Passports.Details.CreateNewPassport' | translate}}</h3>
   <h2>
-    {{passport.passportNumber}}
+    <span>{{'Passports.Details.Passport' | translate}}&nbsp;:</span><br/>
+    {{passport.passportNumber}}&nbsp;
     <span>{{'Passports.Details.Details' | translate}}</span>
     <app-delete-modal *ngIf="passport.passportId!=null" [kind]="'passport'" [name]="passport.passportNumber"
                       (eventEmitter)="deletePassport()" class="delete">
@@ -16,7 +17,7 @@
   </div>
   <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text celLength">name :</span>
+      <span class="input-group-text celLength">{{'Passports.Details.Number' | translate}} :</span>
     </div>
     <input type="text" class="form-control" id="name" [(ngModel)]="passport.passportNumber" placeholder="number">
     <div class="input-group-append">

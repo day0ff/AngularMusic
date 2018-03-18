@@ -1,7 +1,5 @@
 import {Injectable} from '@angular/core';
-
 import {Observable} from 'rxjs/Observable';
-
 import {Passport} from '../passports/passport';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
@@ -31,7 +29,6 @@ export class PassportService {
     return this.http.post<Passport>(this.passportUrl + '/delete',
       JSON.stringify(passport),
       httpOptions);
-    // .map((response: Response) => {console.log(response.status);});
   }
 
   updatePassport(passport: Passport): Observable<string> {

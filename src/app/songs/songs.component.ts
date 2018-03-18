@@ -13,7 +13,7 @@ export class SongsComponent implements OnInit {
 
   getSongs(): void {
     this.songService.getSongs()
-      .subscribe(songs => this.songs = songs);
+      .subscribe(songs => this.songs = songs.sort((s1, s2) => s1.songId - s2.songId));
   }
 
   constructor(private songService: SongService) {

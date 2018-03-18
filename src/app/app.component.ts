@@ -19,6 +19,14 @@ export class AppComponent {
     this.locale = this.translate.getBrowserLang();
   }
 
+  login() {
+    alert('Login');
+  }
+
+  registration() {
+    alert('Register');
+  }
+
   constructor(private translate: TranslateService) {
     this.locale = this.translate.getBrowserLang();
     translate.setDefaultLang(this.locale);

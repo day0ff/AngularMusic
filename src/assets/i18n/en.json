@@ -5,7 +5,9 @@
   "Nav":{
     "Home": "Home",
     "Passports": "Passports",
-    "Songs" : "Songs"
+    "Persons": "Musician",
+    "Songs" : "Songs",
+    "Albums" : "Albums"
   },
   "Modal":{
     "Close":"Close",
@@ -20,11 +22,25 @@
     "Update":{
       "Btn": "Update",
       "Title": "confirm action"
+    },
+    "Login":{
+      "Btn": "Login",
+      "Title": "Login form :",
+      "Login": "login",
+      "Password": "password"
+    },
+    "Registration":{
+      "Btn": "Registration",
+      "Title": "Registration form :",
+      "Login": "login",
+      "Password": "password"
     }
   },
   "Home":{
     "Songs": "Favorite Songs:",
-    "Passports": "Favorite Passports:"
+    "Passports": "Favorite Passports:",
+    "Persons": "Favorite Musician:",
+    "Albums": "Favorite Albums :"
   },
   "Songs":{
     "Title": "Songs",
@@ -43,8 +59,39 @@
     "NotFound":"Passport not found.",
     "Details":{
       "Passport": "Passport",
+      "Number": "number",
       "Details": "details",
       "CreateNewPassport": "Create new Passport",
+      "BtnBack": "go back"
+    }
+  },
+  "Persons":{
+    "Title": "Musician",
+    "NewPerson": "New Musician",
+    "NotFound":"Musician not found.",
+    "Details":{
+      "Person": "Musician",
+      "SongsList": "Songs list :",
+      "Kind": "musician",
+      "FirstName": "first name",
+      "LastName": "last name",
+      "Details": "details",
+      "CreateNewPerson": "Create new Musician",
+      "BtnBack": "go back"
+    }
+  },
+  "Albums":{
+    "Title": "Album",
+    "NewAlbum": "New Album",
+    "NotFound":"Album not found.",
+    "Details":{
+      "Album": "Album",
+      "SongsList": "Songs list :",
+      "Kind": "album",
+      "AlbumName": "title",
+      "AlbumPrice": "pricce",
+      "Details": "details",
+      "CreateNewAlbum": "Create new Album",
       "BtnBack": "go back"
     }
   }

@@ -19,9 +19,17 @@ import {HomeComponent} from './home/home.component';
 import {PassportsComponent} from './passports/passports.component';
 import {PassportService} from './service/passport.service';
 import {PassportDetailComponent} from './passports/passport-detail/passport-detail.component';
-import { DeleteModalComponent } from './modal/delete-modal/delete-modal.component';
-import { UpdateModalComponent } from './modal/update-modal/update-modal.component';
-import { SaveModalComponent } from './modal/save-modal/save-modal.component';
+import {DeleteModalComponent} from './modal/delete-modal/delete-modal.component';
+import {UpdateModalComponent} from './modal/update-modal/update-modal.component';
+import {SaveModalComponent} from './modal/save-modal/save-modal.component';
+import {PersonsComponent} from './persons/persons.component';
+import {PersonService} from './service/person.service';
+import { PersonDetailComponent } from './persons/person-detail/person-detail.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { LoginModalComponent } from './modal/login-modal/login-modal.component';
+import { RegistrationModalComponent } from './modal/registration-modal/registration-modal.component';
+import {AlbumService} from './service/album.service';
+import { AlbumDetailComponent } from './albums/album-detail/album-detail.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +41,13 @@ import { SaveModalComponent } from './modal/save-modal/save-modal.component';
     PassportDetailComponent,
     DeleteModalComponent,
     UpdateModalComponent,
-    SaveModalComponent
+    SaveModalComponent,
+    PersonsComponent,
+    PersonDetailComponent,
+    AlbumsComponent,
+    LoginModalComponent,
+    RegistrationModalComponent,
+    AlbumDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +62,7 @@ import { SaveModalComponent } from './modal/save-modal/save-modal.component';
       }
     })
   ],
-  providers: [SongService, PassportService],
+  providers: [SongService, PassportService, PersonService, AlbumService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
