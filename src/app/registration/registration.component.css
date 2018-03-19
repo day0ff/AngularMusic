@@ -13,16 +13,11 @@
 .curve{
   border-radius: 0px 5px 5px 0;
 }
-.login{
+.registration{
   float: right;
   color: #607D8B;
-  height: 64px;
-  line-height: 64px;
 }
-.login:hover{
+.registration:hover{
   color: #444444;
   cursor: pointer;
-}
-.login span{
-  vertical-align: middle;
 }

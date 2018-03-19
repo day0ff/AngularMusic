@@ -7,7 +7,8 @@
     "Passports": "Passports",
     "Persons": "Musician",
     "Songs" : "Songs",
-    "Albums" : "Albums"
+    "Albums" : "Albums",
+    "Registration": "Registration"
   },
   "Modal":{
     "Close":"Close",
@@ -27,7 +28,8 @@
       "Btn": "Login",
       "Title": "Login form :",
       "Login": "login",
-      "Password": "password"
+      "Password": "password",
+      "Register": "Register"
     },
     "Registration":{
       "Btn": "Registration",
@@ -94,5 +96,10 @@
       "CreateNewAlbum": "Create new Album",
       "BtnBack": "go back"
     }
+  },
+  "Registration":{
+    "Login": "login",
+    "Password": "password",
+    "Register": "Register"
   }
 }

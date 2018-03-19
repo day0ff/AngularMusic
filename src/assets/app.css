@@ -20,3 +20,22 @@ body, input[text], button {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.disc{
+  background: url('./images/disc.png') center right no-repeat;
+}
+.headphones{
+  background: url('./images/headphones.png') center right no-repeat;
+}
+.man{
+  background: url('./images/man.png') center right no-repeat;
+}
+.micro{
+  background: url('./images/micro.png') center right no-repeat;
+}
+.note{
+  background: url('./images/note.png') center right no-repeat;
+}
+.wave{
+  background: url('./images/wave.png') center right no-repeat;
+}

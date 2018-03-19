@@ -23,3 +23,18 @@ a:hover{
   background-color: #607D8B;
   overflow: hidden;
 }
+.note{
+  background-size: 16vh;
+}
+.disc{
+  background-size: 16vh;
+}
+.micro{
+  background-size: 16vh;
+}
+.headphones{
+  background-size: 16vh;
+}
+.wave{
+  background-size: 16vh;
+}

@@ -30,6 +30,7 @@ import { LoginModalComponent } from './modal/login-modal/login-modal.component';
 import { RegistrationModalComponent } from './modal/registration-modal/registration-modal.component';
 import {AlbumService} from './service/album.service';
 import { AlbumDetailComponent } from './albums/album-detail/album-detail.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AlbumDetailComponent } from './albums/album-detail/album-detail.compone
     AlbumsComponent,
     LoginModalComponent,
     RegistrationModalComponent,
-    AlbumDetailComponent
+    AlbumDetailComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

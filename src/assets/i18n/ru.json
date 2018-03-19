@@ -7,7 +7,8 @@
     "Passports": "Пасспорта",
     "Persons": "Исполнители",
     "Songs" : "Песни",
-    "Albums" : "Альбомы"
+    "Albums" : "Альбомы",
+    "Registration": "Регистрация"
   },
   "Modal":{
     "Close":"Отмена",
@@ -27,7 +28,8 @@
       "Btn": "Войти",
       "Title": "Форма входа :",
       "Login": "логин",
-      "Password": "пароль"
+      "Password": "пароль",
+      "Register": "Зарегистрировваться"
     },
     "Registration":{
       "Btn": "Регистрация",
@@ -94,5 +96,10 @@
       "CreateNewAlbum": "Создать новый Альбом",
       "BtnBack": "назад"
     }
+  },
+  "Registration":{
+    "Login": "логин",
+    "Password": "пароль",
+    "Register": "Регистрация"
   }
 }

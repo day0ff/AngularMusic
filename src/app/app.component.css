@@ -32,11 +32,3 @@ dropdown-toggle {
 .dropdown-item {
   width: 100%;
 }
-.app-login-modal {
-  align-content:right;
-  float: right;
-}
-.app-registration-modal{
-  align-content:right;
-  float: right;
-}

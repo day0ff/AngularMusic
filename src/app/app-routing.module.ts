@@ -9,6 +9,7 @@ import {PersonsComponent} from './persons/persons.component';
 import {PersonDetailComponent} from './persons/person-detail/person-detail.component';
 import {AlbumsComponent} from './albums/albums.component';
 import {AlbumDetailComponent} from './albums/album-detail/album-detail.component';
+import {RegistrationComponent} from './registration/registration.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'songs/detail/:id', component: SongDetailComponent},
   {path: 'songs', component: SongsComponent},
   {path: 'albums/detail/:id', component: AlbumDetailComponent},
-  {path: 'albums', component: AlbumsComponent}
+  {path: 'albums', component: AlbumsComponent},
+  {path: 'registration', component: RegistrationComponent}
 ];
 
 @NgModule({

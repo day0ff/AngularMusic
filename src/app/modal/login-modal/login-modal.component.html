@@ -1,8 +1,10 @@
 <!-- Button trigger modal -->
-<span class="login" data-toggle="modal"
-        data-target="#loginModal">
-  {{'Modal.Login.Btn' | translate}}
-</span>
+<div class="login" data-toggle="modal" data-target="#loginModal">
+  <span>
+    <img src="../../../assets/images/man.png" width="24" height="24" alt="login">
+    {{'Modal.Login.Btn' | translate}}
+  </span>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -29,10 +31,15 @@
             <div class="input-group-prepend">
               <span class="input-group-text celLength">{{'Modal.Login.Password' | translate}} :</span>
             </div>
-            <input type="password" class="form-control" id="password" placeholder="{{'Modal.Login.Password' | translate}}">
+            <input type="password" class="form-control" id="password"
+                   placeholder="{{'Modal.Login.Password' | translate}}">
           </div>
+
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal" routerLink="/registration">
+            {{'Modal.Login.Register' | translate}}
+          </button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">{{'Modal.Close' | translate}}</button>
           <button type="button" class="btn btn-light btn-outline-dark" (click)='eventExecute()' data-dismiss="modal">
             {{'Modal.Login.Btn' | translate}}
