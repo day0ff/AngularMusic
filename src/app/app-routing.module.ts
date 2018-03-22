@@ -10,6 +10,7 @@ import {PersonDetailComponent} from './persons/person-detail/person-detail.compo
 import {AlbumsComponent} from './albums/albums.component';
 import {AlbumDetailComponent} from './albums/album-detail/album-detail.component';
 import {RegistrationComponent} from './registration/registration.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -22,11 +23,12 @@ const routes: Routes = [
   {path: 'songs', component: SongsComponent},
   {path: 'albums/detail/:id', component: AlbumDetailComponent},
   {path: 'albums', component: AlbumsComponent},
-  {path: 'registration', component: RegistrationComponent}
+  {path: 'registration', component: RegistrationComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

@@ -31,6 +31,7 @@ import { RegistrationModalComponent } from './modal/registration-modal/registrat
 import {AlbumService} from './service/album.service';
 import { AlbumDetailComponent } from './albums/album-detail/album-detail.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { RegistrationComponent } from './registration/registration.component';
     LoginModalComponent,
     RegistrationModalComponent,
     AlbumDetailComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
