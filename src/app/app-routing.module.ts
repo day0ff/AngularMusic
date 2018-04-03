@@ -12,7 +12,7 @@ import {AlbumDetailComponent} from './albums/album-detail/album-detail.component
 import {RegistrationComponent} from './registration/registration.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'passports/detail/:id', component: PassportDetailComponent},
@@ -28,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

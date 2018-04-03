@@ -15,10 +15,6 @@ export class AppComponent {
     this.translate.use(language);
   }
 
-  getLocale() {
-    this.locale = this.translate.getBrowserLang();
-  }
-
   login() {
     alert('Login');
   }
